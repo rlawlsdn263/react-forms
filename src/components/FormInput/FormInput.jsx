@@ -4,7 +4,7 @@ function FormInput(props) {
   return (
     <div className="formInput">
       {/* <label htmlFor="">Username</label> */}
-      <input ref={props.usernameRef} placeholder={props.placeholder} />
+      <input name={props.name} placeholder={props.placeholder} />
     </div>
   );
 }
