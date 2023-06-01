@@ -17,6 +17,7 @@ function FormInput(props) {
         onChange={onChange}
         onBlur={handleFocus}
         focused={focused.toString()}
+        onFocus={() => restProps.name === "confirmPassword" && setFocused(true)}
       />
       <span>{errorMessage}</span>
     </div>
